@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/open_specs" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="7dp" android:layout_weight="1" android:layout_columnSpan="1" app:cardCornerRadius="5dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/brand_card_lay1" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/shapeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/image_model" android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/car"/>
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="22sp" android:textColor="@color/colorPrimary" android:id="@+id/name_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Maruti Suzuki Dzire" android:textAlignment="center"/>
+                <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/price_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Rs. 5.60 lakh Onwards" android:textAlignment="center"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/hp_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1248 cc" android:textAlignment="center" android:layout_marginEnd="10dp"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/milage_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28 kmpl" android:textAlignment="center" android:layout_marginEnd="10dp"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/fuel_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Petrol/Diesel" android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

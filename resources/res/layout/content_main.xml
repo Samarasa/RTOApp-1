@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@+id/fancey" android:background="@drawable/rounded_rect_orange" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fancy numbers generator" style="@style/shadowtext"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:id="@+id/challan_card" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_weight="1" app:cardCornerRadius="4dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/challan_se" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="5dp" android:src="@drawable/test_pad" android:tint="#777"/>
+                            <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Challan" android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_weight="1" app:cardCornerRadius="4dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ins_details" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="5dp" android:src="@drawable/ic_baseline_beach_access_24"/>
+                            <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Insurance" android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_weight="1" app:cardCornerRadius="4dp">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/fin_details" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="5dp" android:src="@drawable/ic_baseline_attach_money_24"/>
+                            <TextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Finance" android:textAlignment="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/resale_val" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+                    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+                        <ImageView android:padding="8dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_baseline_attach_money_24" android:layout_alignParentStart="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:weightSum="2">
+                            <TextView android:textSize="16sp" android:textColor="@color/black_main" android:gravity="bottom" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:text="Check Resale Value" android:layout_weight="1.25"/>
+                            <TextView android:textSize="11sp" android:textColor="@color/black1" android:gravity="top" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Find out the real value of vehicles." android:layout_weight="0.75"/>
+                        </LinearLayout>
+                        <ImageView android:padding="12dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/right_arrow" android:tint="@color/black1" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/black1" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/dl_test" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+                    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+                        <ImageView android:padding="12dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/edit" android:tint="@color/black1" android:layout_alignParentStart="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="50dp" android:layout_marginRight="50dp" android:weightSum="2">
+                            <TextView android:textSize="16sp" android:textColor="@color/black_main" android:gravity="bottom" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:text="Take Your License Test" android:layout_weight="1.25"/>
+                            <TextView android:textSize="11sp" android:textColor="@color/black1" android:gravity="top" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="0dp" android:text="You can practice RTO License exam" android:layout_weight="0.75"/>
+                        </LinearLayout>
+                        <ImageView android:padding="12dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/right_arrow" android:tint="@color/black1" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/ad_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/fb_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <androidx.cardview.widget.CardView android:id="@+id/vehicle_prices" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Vehicle Prices"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/car_p" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/car"/>
+                                <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="car"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/bike_p" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center" android:paddingTop="5dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/bike1"/>
+                                <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bike"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/scooty_p" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/scooty"/>
+                                <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Scooty"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="RTO Signals Categories" android:paddingStart="5dp"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mandatory_sign" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_weight="1" android:layout_marginEnd="10dp">
+                                <ImageView android:layout_gravity="center" android:padding="9dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mandatory"/>
+                                <TextView android:textSize="16sp" android:typeface="normal" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mandatory"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/caution_sign" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center" android:padding="9dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/caution"/>
+                                <TextView android:textSize="16sp" android:typeface="normal" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/cautionary"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/traffic_sign" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp">
+                                <ImageView android:layout_gravity="center" android:padding="9dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/signals"/>
+                                <TextView android:textSize="16sp" android:typeface="normal" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/signals"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/informatory_sign" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                                <ImageView android:layout_gravity="center" android:padding="9dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/informatory_o"/>
+                                <TextView android:textSize="16sp" android:typeface="normal" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/informatory"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="RC Useful Links"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/no_objection" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_marginEnd="10dp">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOC"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/reassign" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="2dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reassignment"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/dup_trade" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_marginEnd="10dp">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Certificate Issues"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/hp_endorse" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="2dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HP Endorsement"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/more_useful_rc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginEnd="5dp">
+                            <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More"/>
+                            <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_keyboard_arrow_right_black_24dp" android:tint="@color/colorPrimary"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="DL Useful Information" android:paddingStart="5dp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/learner_useful_dl" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learner_useful_dl"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/permanent_useful_dl" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permanent_useful_dl"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/dup_useful_dl" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dup_useful_dl"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/renewable_useful_dl" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/renewable_useful_dl"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/add_useful_class" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_useful_class"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/license_useful_related_fees" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/license_useful_related_fees"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/international_useful_driving_permit" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="40dp" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/international_useful_driving_permit"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1">
+                                    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/celeb_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Celebrity Vehicles Details" android:layout_weight="1"/>
+                            <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:id="@+id/celeb_more1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        </LinearLayout>
+                        <HorizontalScrollView android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:id="@+id/cele_one" android:background="@drawable/rounded_rect_ligntorange" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/celeb_car_one" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vijay Malya" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/cele_two" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/celeb_car_two" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arunachal Pradesh" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/cele_three" android:background="@drawable/rounded_rect_ligntorange" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/celeb_car_three" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Assam" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/cele_four" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/celeb_car_four" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bihar" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/celeb_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginStart="15dp" android:layout_marginEnd="5dp">
+                                    <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More"/>
+                                    <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_keyboard_arrow_right_black_24dp" android:tint="@color/colorPrimary"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/rto_codes_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="5dp">
+                    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="RTO Codes" android:layout_weight="1"/>
+                            <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:id="@+id/rto_codes_more1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                        </LinearLayout>
+                        <HorizontalScrollView android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <LinearLayout android:id="@+id/state_one" android:background="@drawable/rounded_rect_ligntorange" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Andhra Pradesh" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/state_two" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arunachal Pradesh" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/state_three" android:background="@drawable/rounded_rect_ligntorange" android:layout_width="120dp" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Assam" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:id="@+id/state_four" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="120dp" android:layout_height="match_parent" android:layout_margin="5dp">
+                                    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bihar" style="@style/shadowtext"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rto_codes_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginStart="15dp" android:layout_marginEnd="5dp">
+                                    <TextView android:textColor="@color/colorPrimary" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More"/>
+                                    <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_keyboard_arrow_right_black_24dp" android:tint="@color/colorPrimary"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/news_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="20sp" android:textColor="@color/black" android:gravity="start" android:padding="5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="News" android:layout_weight="1"/>
+                        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@+id/news_recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/ad_view_main1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="52dp"/>
+</LinearLayout>

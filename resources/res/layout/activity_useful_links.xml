@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="8dp" android:text="RC INFORMATION"/>
+                <androidx.cardview.widget.CardView android:id="@+id/temp_reg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_temp_reg" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/rc_renewal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_rc_renewal" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/no_objection" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_no_objection_certificate" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/hp_termina" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_hp_termination" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/reassign" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_reassign" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/dup_trade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_dup_trade" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/diplomatic_veh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="20dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_diplomatic_vehicles" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:id="@+id/perm_reg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_perm_reg" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/dup_rc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_duplicate_rc" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/hp_endorse" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_hp_endorsment" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/add_change" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_address_change" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/trade_cert" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_trade_certificate" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/ownership" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_ownership_transfer" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@+id/reg_display" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="40dp" app:cardCornerRadius="4dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/rounded_rect" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_registration_display" android:textAlignment="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

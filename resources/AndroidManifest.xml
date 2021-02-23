@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="25" android:versionName="25.0" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="util.MyApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.NewStatActivity"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.V_Loading"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.ExitApp" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_main2" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.Main2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.RTOStates" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.RTOCodes" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.CautionarySignals" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.PolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppDialogTheme" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.RatingActivity"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.UpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.StartActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.V_NoRegistration" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.V_RecentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.V_DetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.V_SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Fancy Number Generator" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.FancyGenerator" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.FancyNumberResult" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.RcWebView" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.UsefulLinks" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.VehicleBrands" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.VehicleModels" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.VehicleVariant" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.VehicleFeatures" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.News" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.DLTestResults" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.DLTest" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.CelebrityCars" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.OurAdActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppDialogTheme" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.FeedbackActivity"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.ValueOfVehicle" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.ResaleValue" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.VehicleResale" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.EChallan" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.ChallanResults" android:screenOrientation="portrait"/>
+        <activity android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.DeepSearch" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.WebCustom" android:screenOrientation="portrait"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@string/admob_app_id"/>
+        <service android:name="service.MyFirebaseMessagingService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.rtb_enabled" android:value="true"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.lifecycle-process"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.workmanager-init" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="6"/>
+    </application>
+</manifest>

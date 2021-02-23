@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect_orange" android:padding="5dp" android:layout_width="350dp" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:translationZ="5dp" android:elevation="5dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="RTO Code" android:textAlignment="center"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/card_code_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:translationZ="5dp" android:elevation="5dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="RTO Name" android:textAlignment="center"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/card_code_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:translationZ="5dp" android:elevation="5dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="RTO Address" android:textAlignment="center"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/card_code_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:translationZ="5dp" android:elevation="5dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="RTO Pin" android:textAlignment="center"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/card_code_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:translationZ="5dp" android:elevation="5dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="RTO Phone" android:textAlignment="center"/>
+                <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/card_code_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button android:textSize="22sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/btn_dialog" android:background="@drawable/rounded_rect" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginBottom="10dp" android:text="OK" android:layout_marginEnd="10dp" android:elevation="5dp"/>
+    </LinearLayout>
+</ScrollView>

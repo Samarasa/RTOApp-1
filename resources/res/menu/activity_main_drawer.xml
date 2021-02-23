@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home_black_24dp" android:id="@+id/home" android:title="Home"/>
+        <item android:icon="@drawable/ic_search_black_24dp" android:id="@+id/vehicleinfo" android:title="Search Vehicle"/>
+        <item android:icon="@drawable/refresh_black" android:id="@+id/recentsearches" android:title="Recent Searches"/>
+        <item android:icon="@drawable/ic_star_half_black_24dp" android:id="@+id/rating" android:title="Rate Us"/>
+        <item android:icon="@drawable/ic_share_black_24dp" android:id="@+id/share" android:title="Share Application"/>
+        <item android:icon="@drawable/ic_menu_send" android:id="@+id/feedback" android:title="Feedback"/>
+        <item android:icon="@drawable/ic_remove_red_eye_black_24dp" android:id="@+id/privacypolicy" android:title="Privacy Policy"/>
+    </group>
+</menu>

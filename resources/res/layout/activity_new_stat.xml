@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="#68000000" android:src="@drawable/start_bg" android:scaleType="centerCrop"/>
+    <TextView android:textSize="24sp" android:textColor="#fff" android:background="@drawable/button_main" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="Find details of number of vehicles in seconds" android:layout_centerInParent="true" android:textAlignment="center"/>
+    <LinearLayout android:id="@+id/start" android:background="@drawable/rounded_rect_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:paddingStart="50dp" android:paddingEnd="50dp">
+        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Start" style="@style/shadowtext"/>
+    </LinearLayout>
+</RelativeLayout>

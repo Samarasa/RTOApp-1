@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="25sp" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/loading_brands" android:padding="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Loading.." android:textAlignment="center"/>
+        <androidx.core.widget.NestedScrollView android:id="@+id/nestedScrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/fb_native_vbrands" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="2dp" android:layout_marginRight="4dp" android:layout_marginBottom="5dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/brands_recycler" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_view_brands" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_brands" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

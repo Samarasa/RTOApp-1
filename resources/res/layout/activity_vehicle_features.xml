@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_above="@+id/ad_view_features" android:layout_alignParentTop="true">
+        <TextView android:textSize="25sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/loading_features" android:padding="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Loading.." android:textAlignment="center"/>
+        <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView android:id="@+id/expandableStickyListHeadersListView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_view_features" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_features" android:background="#000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

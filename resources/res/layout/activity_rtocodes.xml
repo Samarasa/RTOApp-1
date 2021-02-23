@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="23sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading.." android:layout_weight="1" android:textAlignment="center"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rto_codes" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_view_rto_codes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_rto_codes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

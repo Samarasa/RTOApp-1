@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_rect" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_margin="1dp">
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/vehicle_searched" android:background="@drawable/background_button1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/app_name" android:textAlignment="center"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/loading_msg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading msg..." android:textAlignment="center"/>
+    <ImageView android:id="@+id/loading_gif" android:layout_width="150dp" android:layout_height="80dp" android:layout_marginBottom="20dp"/>
+</LinearLayout>

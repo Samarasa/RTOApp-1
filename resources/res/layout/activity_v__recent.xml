@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/noData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="20sp" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="No recent searches to show" android:layout_centerInParent="true" android:textAlignment="center"/>
+            <TextView android:textSize="18sp" android:id="@+id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Search Now" android:layout_below="@+id/text" android:textAlignment="center"/>
+        </LinearLayout>
+        <ListView android:id="@+id/simpleListView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_view_recent_rc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_recent_rc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

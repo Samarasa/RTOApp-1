@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/vehicle_searched" android:background="@drawable/background_button1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/app_name" android:textAlignment="center"/>
+    <TextView android:textSize="16sp" android:id="@+id/heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Note: Newly registered/transferred vehicle details may not be updated, please try after few days or check with nearest RTO." android:fontFamily="@font/coda"/>
+    <TextView android:textSize="16sp" android:id="@+id/privacy1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Please send your vehicle number to us using CONTACT button, we will verify and get back to you as soon as possible."/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textColor="@color/white" android:id="@+id/contactus" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="CONTACT US" android:layout_weight="1"/>
+        <Button android:textColor="@color/black" android:id="@+id/home" android:background="@drawable/rounded_rect" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="  HOME  " android:layout_weight="1"/>
+        <Button android:textColor="@color/white" android:id="@+id/search" android:background="@drawable/rounded_rect_ligntorange1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="  SEARCH  " android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/adAtNoReg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+</LinearLayout>

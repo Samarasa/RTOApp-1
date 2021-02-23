@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/challan_data_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ad_challan_result">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/rating_layout" android:background="@drawable/rounded_rect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="PLEASE, RATE US 5 STAR" android:textAlignment="center"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/starOne" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starTwo" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starThree" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starFour" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starFive" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/challanRecycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/ad_challan_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

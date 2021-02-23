@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout_focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/start_number"/>
+                <EditText android:id="@+id/start_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0000" android:maxLength="4" android:inputType="number"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/end_number"/>
+                <EditText android:id="@+id/end_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9999" android:maxLength="4" android:inputType="number"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/repeats_number"/>
+                <Spinner android:entries="@array/spinner_item" android:id="@+id/spinner1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/lucky_number"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/t_1" android:background="@drawable/circle" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="1" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_2" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="2" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_3" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="3" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_4" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="4" android:textAlignment="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_5" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="5" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_6" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="6" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_7" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="7" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_8" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="8" android:textAlignment="center"/>
+                        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@+id/t_9" android:background="@drawable/circle1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1dp" android:text="9" android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp">
+                    <Button android:textColor="#ffffff" android:id="@+id/find" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="Generate Fancy numbers"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_view_fancy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fb_banner_fancy_generator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

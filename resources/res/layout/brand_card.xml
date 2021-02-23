@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/open_specs" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="7dp" android:layout_weight="1" android:layout_columnSpan="1" app:cardCornerRadius="5dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/brand_card_lay" android:background="@drawable/rounded_rect" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/brand_image" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="5dp" android:src="@drawable/car_white"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/name_brand" android:background="@color/black" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/signals" android:textAlignment="center"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

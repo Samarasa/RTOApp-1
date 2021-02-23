@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="120dp" android:layout_height="120dp" android:layout_margin="10dp" android:src="@drawable/icon"/>
+        <TextView android:textSize="29sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="New version available. Please update app" android:textAlignment="center"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/update_app" android:background="@color/black" android:paddingLeft="35dp" android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:elevation="5dp">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Update" android:textAllCaps="true"/>
+            <View android:background="#ffffff" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:alpha="0.5"/>
+            <ImageView android:layout_gravity="center" android:background="@drawable/ic_system_update_alt_black_24dp" android:padding="15dp" android:layout_width="40dp" android:layout_height="40dp" android:tint="@color/white" android:backgroundTint="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

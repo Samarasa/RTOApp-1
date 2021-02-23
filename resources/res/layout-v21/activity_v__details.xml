@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/v_data" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_above="@+id/our_apps_details1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="55dp">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vowner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <LinearLayout android:orientation="horizontal" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/ownerrelative" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@+id/ownername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Owner Name"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/ownernameValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/ownername"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rating_layout" android:background="@drawable/rounded_rect" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="16sp" android:textColor="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="PLEASE, RATE US 5 STAR" android:textAlignment="center"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/starOne" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starTwo" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starThree" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starFour" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                    <ImageView android:id="@+id/starFive" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/star_outline" android:tint="@color/colorPrimaryDark"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_below="@+id/card_view1" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/vage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Age of Vehicle"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/vageValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/vage"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vmodel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/makemodel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Maker Model"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/makemodelValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/makemodel"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_viewaddress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:elevation="3dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/owneraddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Address And Phone No"/>
+                    <TextView android:textSize="16dp" android:id="@+id/owneraddressValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="For security reasons address and mobile numbers are hidden." android:layout_below="@+id/owneraddress"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vstate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_below="@+id/card_view1" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/vstate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="State"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/vstateValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/vstate"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vfins" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_below="@+id/card_view1" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/vfins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Finance Details"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/vfinsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/vfins"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <FrameLayout android:id="@+id/ad_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/fb_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vins" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1" android:layout_below="@+id/card_view1" android:elevation="3dp">
+                    <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@+id/vins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Vehicle Insured Upto"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/vinsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/vins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vregdate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1" android:elevation="3dp">
+                    <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@+id/registrationdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Registration Date"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/registrationdateValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/registrationdate"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vfuel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1" android:elevation="3dp">
+                    <RelativeLayout android:layout_gravity="center" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@+id/fueltype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Fuel Type"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/fueltypeValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/fueltype"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vclass" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="3dp" android:layout_weight="1" android:elevation="3dp">
+                    <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@+id/vehicleclass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Vehicle Class"/>
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/vehicleclassValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/vehicleclass"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vregauth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/registrationauthority" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="REGISTRATION AUTHORITY"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/registrationauthorityValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/registrationauthority"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vengin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/engineno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Engine Number"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/enginenoValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/engineno"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vchasis" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/chasisno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="Chasis Number"/>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/chasisnoValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/chasisno"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_vnote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:elevation="3dp">
+                <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textColor="@color/colorPrimary" android:id="@+id/not" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not showing CURRENT OWNER details?"/>
+                    <TextView android:id="@+id/notfound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Note: Newly registered/transferred vehicle details may not be updated, please try after few days or check with nearest RTO" android:layout_below="@+id/not"/>
+                    <Button android:textColor="#fff" android:id="@+id/report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Report" android:layout_below="@+id/notfound" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:backgroundTint="@color/black"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/adAtSearchDetails" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/our_apps_details1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/our_apps_details" android:background="@drawable/rounded_rect_orange" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="#fff" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:text="Our Apps" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="2dp"/>
+                <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/s_view_all" android:background="@color/black" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:text="View All" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@+id/card_view2" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:elevation="3dp">
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/s_one" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp" android:src="@drawable/ic_hourglass_empty_black_24dp"/>
+                        <ImageView android:id="@+id/s_two" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp" android:src="@drawable/ic_hourglass_empty_black_24dp"/>
+                        <ImageView android:id="@+id/s_three" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp" android:src="@drawable/ic_hourglass_empty_black_24dp"/>
+                        <ImageView android:id="@+id/s_four" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp"/>
+                        <ImageView android:id="@+id/s_five" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp" android:layout_marginEnd="5dp"/>
+                        <ImageView android:id="@+id/s_six" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp"/>
+                        <ImageView android:id="@+id/s_seven" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp"/>
+                        <ImageView android:id="@+id/s_eight" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp"/>
+                        <ImageView android:id="@+id/s_nine" android:visibility="gone" android:layout_width="70sp" android:layout_height="70sp" android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/black" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageView android:id="@+id/previous" android:padding="5dp" android:layout_width="0dp" android:layout_height="44dp" android:layout_margin="3dp" android:src="@drawable/ic_arrow_back_black_24dp" android:tint="@color/white" android:layout_weight="1"/>
+            <ImageView android:id="@+id/share" android:padding="5dp" android:layout_width="0dp" android:layout_height="44dp" android:layout_margin="3dp" android:src="@drawable/ic_share_black_24dp" android:tint="@color/white" android:layout_weight="1"/>
+            <ImageView android:id="@+id/search_again" android:padding="5dp" android:layout_width="0dp" android:layout_height="44dp" android:layout_margin="3dp" android:src="@drawable/ic_search_black_24dp" android:tint="@color/white" android:layout_weight="1"/>
+            <ImageView android:id="@+id/next" android:padding="5dp" android:layout_width="0dp" android:layout_height="44dp" android:layout_margin="3dp" android:src="@drawable/ic_arrow_forward_black_24dp" android:tint="@color/white" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

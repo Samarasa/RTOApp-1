@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#223344" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ad_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/close" android:background="#9ec6c6c6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_close_clear_cancel" android:tint="@color/colorAccent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>
